@@ -1,25 +1,28 @@
+import Input from './components/input';
+
 function App() {
   return (
-   <div style={{
-      marginTop: 10,
-      marginLeft: 10,
-      width: 500,
-      display: 'flex',
-      flexDirection: 'column'
-   }}>
-    <div>
-      <span>Ingrese su nombre de usuario:</span>
-      <input
-        type='text'
+    <div className="
+      w-screen
+      h-screen
+      flex
+      flex-col
+      items-center
+      justify-center
+      gap-3"
+    >
+      <Input
+        label='Username:'
+        name='username'
+        placeholder='username'
       />
-    </div>
-    <div style={{ marginTop: 5 }}>
-      <span>Ingrese su contrasena:</span>
-      <input
+      <Input
+        label='Password:'
         type='password'
+        name='password'
+        placeholder='password'
       />
     </div>
-   </div>
   );
 }
 
